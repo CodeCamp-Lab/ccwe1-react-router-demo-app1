@@ -6,6 +6,8 @@ export default function ParentLevel() {
   const [score, setScore] = useState(0);
 
   const count = useCounterStore((state) => state.count)
+  const min = useCounterStore((state) => state.min);
+  const max = useCounterStore((state) => state.max);
 
   return (
     <div>
@@ -14,6 +16,8 @@ export default function ParentLevel() {
       <Level1 score={score} setScore={setScore}/>
       <hr />
       <div className="p-8 text-3xl">counter: {count}</div>
+      <p>ค่าต่ำสุด: {min}</p>
+      <p>ค่ามากสุด: {max}</p>
     </div>
   );
 }

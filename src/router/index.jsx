@@ -5,7 +5,7 @@ import Contact from "../pages/Contact";
 import Layout from "../components/Layout";
 import ErrorPage from  "../pages/ErrorPage"
 import ParentLevel from "../pages/ParentLevel";
-
+import UserProfile from "../pages/UserProfile";
 
 import { postRoutes } from "./posts.router";
 
@@ -30,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "level",
         element: <ParentLevel />
+      },
+      {
+        path: "user",
+        element: <UserProfile />
       },
 
       {

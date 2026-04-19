@@ -196,3 +196,21 @@ a.active {
   font-weight: bold;
   color: red;
 }
+
+div.light a {
+  color: black;
+}
+
+div.light a.active {
+  font-weight: bold;
+  color: red;
+}
+
+div.dark a {
+  color: white;
+}
+
+div.dark a.active {
+  font-weight: bold;
+  color: red;
+}
