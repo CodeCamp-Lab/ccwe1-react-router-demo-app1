@@ -9,11 +9,11 @@ export default function Layout() {
   return (
     <div>
       <header>
-        <h1 class="text-blue-500 font-bold">My App</h1>
+        <h1 className="text-blue-500 font-bold">My App</h1>
       </header>
       <Nav />
       <hr />
-      <main class="mt-10 border rounded-xl shadow-xl m-10 p-5 min-h-50">
+      <main className="mt-10 border rounded-xl shadow-xl m-10 p-5 min-h-50">
         {/* <p>{location.pathname}</p> */}
         {navigation.state === "loading" ? <p class="animate-bounce">Loading...</p> : <Outlet />}
       </main>

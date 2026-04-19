@@ -4,10 +4,8 @@ import News from "../pages/News";
 import Contact from "../pages/Contact";
 import Layout from "../components/Layout";
 import ErrorPage from  "../pages/ErrorPage"
-// import PostsLayout from "../components/PostsLayout";
-// import Posts from "../pages/Posts";
-// import PostDetail from "../pages/PostDetail";
-// import { getPosts, getPostById } from "../api/posts";
+import ParentLevel from "../pages/ParentLevel";
+
 
 import { postRoutes } from "./posts.router";
 
@@ -29,6 +27,11 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       postRoutes,
+      {
+        path: "level",
+        element: <ParentLevel />
+      },
+
       {
         path: "*", 
         element: <ErrorPage />
